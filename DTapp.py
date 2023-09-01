@@ -13,4 +13,7 @@ label.pack()
 text_box=tk.Entry(window,width=40)
 text_box.pack()
 
+wb=excel.Workbook()
+ws=wb.worksheets[0]
+
 window.mainloop()
