@@ -24,9 +24,12 @@ def ok_button():
     ws["A1"].value=textA
     mbox.showinfo("結果","反映完了")
     wb.save("デスクトップアプリ.xlsx")
-    
+
 okbutton=tk.Button(window,text="反映",command=ok_button,width=14)
 desbutton=tk.Button(window,text="終了",command=close_window,width=14)
+
+okbutton.pack(fill = 'x', padx=20, side='left')
+desbutton.pack(fill = 'x', padx=20, side='left')
 
 window.mainloop()
 
