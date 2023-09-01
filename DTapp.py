@@ -10,4 +10,7 @@ window.title("Excelをいじる")
 label=tk.Label(window,text="入力するのだ")
 label.pack()
 
+text_box=tk.Entry(window,width=40)
+text_box.pack()
+
 window.mainloop()
