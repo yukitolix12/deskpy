@@ -16,4 +16,13 @@ text_box.pack()
 wb=excel.Workbook()
 ws=wb.worksheets[0]
 
+def close_window():
+    window.destroy()
+
+def ok_button():
+    textA=text_box.get()
+    ws["A1"].value=textA
+    mbox.showinfo("結果","反映完了")
+    wb.save("デスクトップアプリ.xlsx")
+
 window.mainloop()
